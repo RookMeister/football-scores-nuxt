@@ -25,9 +25,6 @@ export default defineNuxtConfig({
     '@nuxtjs-alt/proxy',
     'nuxt-windicss',
   ],
-  // buildModules: [
-  //   'nuxt-windicss',
-  // ],
   windicss: {
     analyze: true,
   },

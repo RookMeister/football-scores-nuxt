@@ -17,7 +17,7 @@ const store = useMatchesStore()
     <div class="fs-grid-row-8 p-8px">
       <div style="display: flex;align-items: center;justify-content: space-between;text-transform: capitalize;">
         <Icon name="star-outline" style="height: 36px;width: 36px;padding: 4px;" />
-        <!-- {{ store.currentMonth }} -->
+        {{ store.currentMonth }}
         <Icon name="star-outline" style="height: 36px;width: 36px;padding: 4px;" />
       </div>
       <div style="display: flex;align-items: center;justify-content: space-between;">

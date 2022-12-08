@@ -9,7 +9,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@vant/touch-emulator": "^1.4.0",
     "date-fns": "^2.29.3",
     "vant": "^4.0.1"

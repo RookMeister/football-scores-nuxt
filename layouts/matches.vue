@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMatchesStore } from '@/modules/matches/store'
-import FooterVue from '~~/components/Footer.vue'
+import FooterVue from '~/components/Footer.vue'
 
 const store = useMatchesStore()
 </script>

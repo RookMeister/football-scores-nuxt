@@ -1,12 +1,10 @@
 import { defineStore } from 'pinia'
-import { eachDayOfInterval, endOfWeek, format, formatISO, getDate, startOfWeek } from 'date-fns'
-// import ruLocale from 'date-fns/locale/ru'
-import { ru } from 'date-fns/locale'
+import { eachDayOfInterval, endOfWeek, formatISO, getDate, startOfWeek } from 'date-fns'
 
 export const useMatchesStore = defineStore('matches', () => {
   const currentDate = new Date()
   const listDays = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
-  const currentMonth = format(currentDate, 'MMMM', { locale: ru })
+  const currentMonth = currentDate.toLocaleDateString('ru-RU', { month: 'long' })
 
   const activeDate = ref(formatISO(currentDate, { representation: 'date' }))
 

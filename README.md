@@ -1,4 +1,4 @@
-<br><p align="center">
+<!-- <br><p align="center">
 <img height="100px" src="./public/movies.webp" />
 </p>
 
@@ -41,4 +41,4 @@ Based on [jasonujmaalvis/vue-movies](https://github.com/jasonujmaalvis/vue-movie
 
 Data provided by [The Movie Database](https://www.themoviedb.org).
 
-This project uses the TMDB API but is not endorsed or certified by TMDB.
+This project uses the TMDB API but is not endorsed or certified by TMDB. -->

@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.5.0",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "dev:proxy": "cd proxy && pnpm dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@vant/touch-emulator": "^1.4.0",
+    "date-fns": "^2.29.3",
+    "vant": "^4.0.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@nuxtjs-alt/proxy": "^1.3.8",
+    "@nuxtjs/color-mode": "^3.1.8",
+    "@pinia/nuxt": "^0.4.3",
+    "@unocss/nuxt": "^0.45.29",
+    "@vueuse/nuxt": "^9.3.0",
+    "eslint": "^8.25.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "lru-cache": "^7.14.0",
+    "nuxt": "^3.0.0",
+    "nuxt-windicss": "^2.5.5",
+    "ohash": "^0.1.5",
+    "pinia": "^2.0.23",
+    "typescript": "^4.8.4",
+    "vite-svg-loader": "^3.6.0",
+    "windicss-analysis": "^0.3.5"
+  }
+}

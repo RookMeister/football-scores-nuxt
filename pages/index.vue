@@ -43,7 +43,7 @@ const onRefresh = () => setTimeout(async () => {
 
 <style lang="less">
 main {
-  height: calc(100% - 213px);
+  height: calc(100% - 167px);
   background-color: #eee;
   overflow: auto;
 }

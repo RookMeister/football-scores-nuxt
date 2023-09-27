@@ -4,13 +4,13 @@ import FooterVue from '~/components/Footer.vue'
 
 <template>
   <header style="background-color: #ffffff;">
-    <van-nav-bar :border="false">
+    <!-- <van-nav-bar :border="false">
       <template #title>
         <div style="text-align: center">
           <img src="~/assets/logo.png" style="height: 46px;padding: 8px;" alt="" srcset="">
         </div>
       </template>
-    </van-nav-bar>
+    </van-nav-bar> -->
   </header>
   <slot />
   <FooterVue />

@@ -50,7 +50,6 @@ html {
 body {
   position: fixed;
   overflow: hidden;
-  /* margin-bottom: calc(env(safe-area-inset-bottom) + 51px); */
   width: 100%;
 }
 

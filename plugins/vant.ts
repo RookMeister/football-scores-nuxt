@@ -19,4 +19,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     .use(vant.Dialog)
     .use(vant.Loading)
     .use(vant.Notify)
+    .use(vant.Swipe)
+    .use(vant.SwipeItem)
 })

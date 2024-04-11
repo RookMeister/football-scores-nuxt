@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs-alt/proxy',
+    '@nuxt-alt/proxy',
     'nuxt-windicss',
   ],
   windicss: {
@@ -41,7 +41,13 @@ export default defineNuxtConfig({
     plugins: [svgLoader()],
   },
   proxy: {
-    '/m': 'https://s74794.cdn.ngenix.net',
+    proxies: {
+      '/logo': {
+        target: 'https://images.fotmob.com/image_resources/logo',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/logo/, '')
+      },
+    }
   },
   runtimeConfig: {
     public: {

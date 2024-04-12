@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { format } from 'date-fns'
 import ListLeagues from '@/components/List.vue'
 import Matches from '@/components/Matches.vue'
 
-const { data: leagues } = await useFetch(() => `/api/allLeagues/`, { method: 'GET' })
-const { data: matches } = await useFetch(() => `/api/matches/20240410`, { method: 'GET' })
+
+const date = format(new Date(), 'yyyyMMdd')
+const { data: leagues } = await useFetch(() => '/api/allLeagues/', { method: 'GET' })
+const { data: matches } = await useFetch(() => `/api/matches/${date}`, { method: 'GET' })
 </script>
 
 <template>

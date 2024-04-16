@@ -1,9 +1,8 @@
 {
-  "name": "Football Scores666",
-  "short_name": "Football Scores666",
+  "name": "Football Scores",
+  "short_name": "FS",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "",
   "lang": "ru",
   "scope": "/",
   "orientation": "portrait",

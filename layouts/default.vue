@@ -6,8 +6,16 @@
       </NuxtLink>
     </div>
   </header>
-  <main class="max-w-1280px mx-auto py-8">
-    <slot />
+  <main>
+    <div class="max-w-1280px mx-auto py-8">
+      <slot />
+    </div>
   </main>
   <footer />
 </template>
+
+<style>
+main {
+	background-color: #f5f5f5;
+}
+</style>

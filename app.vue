@@ -19,10 +19,9 @@ html, body , #__nuxt{
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(245, 245, 245, 1.0)
 }
 
-/* html {
+html {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
@@ -45,12 +44,6 @@ html, body , #__nuxt{
   }
 }
 
-body {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-}
-
 @supports (padding-top: env(safe-area-inset-top)) {
   body {
     --safe-area-inset-top: env(safe-area-inset-top);
@@ -68,5 +61,5 @@ body {
   body {
     height: 100%;
   }
-} */
+}
 </style>

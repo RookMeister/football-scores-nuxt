@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent } from 'vue';
 
-const props = withDefaults(defineProps<{ name: string; size?: number }>(), { size: 1 })
-const AsyncIcon = defineAsyncComponent(() => import(`~/assets/${props.name}.svg`))
+const props = withDefaults(defineProps<{ name: string; size?: number }>(), { size: 1 });
+const AsyncIcon = defineAsyncComponent(() => import(`~/assets/${props.name}.svg`));
 </script>
 
 <template>

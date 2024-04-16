@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { format, isToday, isTomorrow, isYesterday, addDays } from 'date-fns';
-import ru from 'date-fns/locale/ru';
+import { ru } from 'date-fns/locale';
 import { ChevronRight, ChevronLeft } from 'lucide-vue-next';
 import Card from '@/components/Card.vue';
 

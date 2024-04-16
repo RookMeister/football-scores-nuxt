@@ -1,15 +1,3 @@
-export interface SpinnerConfigs {
-  [spinnerName: string]: SpinnerConfig;
-}
-
-export interface SpinnerConfig {
-  dur: number;
-  circles?: number;
-  lines?: number;
-  elmDuration?: boolean;
-  fn: (dur: number, index: number, total: number) => SpinnerData;
-}
-
 export interface SpinnerData {
   r?: number;
   y1?: number;
@@ -21,6 +9,18 @@ export interface SpinnerData {
   transform?: string;
 }
 
+export interface SpinnerConfig {
+  dur: number;
+  circles?: number;
+  lines?: number;
+  elmDuration?: boolean;
+  fn: (dur: number, index: number, total: number) => SpinnerData;
+}
+
+export interface SpinnerConfigs {
+  [spinnerName: string]: SpinnerConfig;
+
+}
 const spinners = {
   bubbles: {
     dur: 1000,
@@ -33,10 +33,10 @@ const spinners = {
         style: {
           top: `${9 * Math.sin(angle)}px`,
           left: `${9 * Math.cos(angle)}px`,
-          'animation-delay': animationDelay,
-        },
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   circles: {
@@ -51,10 +51,10 @@ const spinners = {
         style: {
           top: `${9 * Math.sin(angle)}px`,
           left: `${9 * Math.cos(angle)}px`,
-          'animation-delay': animationDelay,
-        },
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   circular: {
@@ -69,9 +69,9 @@ const spinners = {
         fill: 'none',
         viewBox: '24 24 48 48',
         transform: 'translate(0,0)',
-        style: {},
+        style: {}
       };
-    },
+    }
   },
 
   crescent: {
@@ -80,9 +80,9 @@ const spinners = {
     fn: () => {
       return {
         r: 26,
-        style: {},
+        style: {}
       };
-    },
+    }
   },
 
   dots: {
@@ -94,10 +94,10 @@ const spinners = {
         r: 6,
         style: {
           left: `${9 - 9 * index}px`,
-          'animation-delay': animationDelay,
-        },
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   lines: {
@@ -111,11 +111,11 @@ const spinners = {
         y1: 14,
         y2: 26,
         style: {
-          transform: transform,
-          'animation-delay': animationDelay,
-        },
+          transform,
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   'lines-small': {
@@ -128,11 +128,11 @@ const spinners = {
         y1: 12,
         y2: 20,
         style: {
-          transform: transform,
-          'animation-delay': animationDelay,
-        },
+          transform,
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   'lines-sharp': {
@@ -146,11 +146,11 @@ const spinners = {
         y1: 17,
         y2: 29,
         style: {
-          transform: transform,
-          'animation-delay': animationDelay,
-        },
+          transform,
+          'animation-delay': animationDelay
+        }
       };
-    },
+    }
   },
 
   'lines-sharp-small': {
@@ -163,12 +163,12 @@ const spinners = {
         y1: 12,
         y2: 20,
         style: {
-          transform: transform,
-          'animation-delay': animationDelay,
-        },
+          transform,
+          'animation-delay': animationDelay
+        }
       };
-    },
-  },
+    }
+  }
 };
 
 export const SPINNERS: SpinnerConfigs = spinners;

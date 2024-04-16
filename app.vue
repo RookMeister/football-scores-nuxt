@@ -1,12 +1,10 @@
 <script setup>
 useHead({
-  htmlAttrs: {
-    lang: 'ru',
-  },
+  htmlAttrs: { lang: 'ru' },
   charset: 'utf-8',
-  title: 'Football Scores',
+  title: 'Football Scores'
   // titleTemplate: title => title !== 'Nuxt Movies' ? `${title} · Nuxt Movies` : title,
-})
+});
 </script>
 
 <template>
